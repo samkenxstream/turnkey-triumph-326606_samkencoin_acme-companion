@@ -110,7 +110,7 @@ jobs:
           done
       - name: Setup Pebble
         if: ${{ matrix.acme-ca == 'pebble' }}
-        run: test/setup/setup-pebble.sh
+        run: test/setup/pebble/setup-pebble.sh
       - name: Setup Boulder
         if: ${{ matrix.acme-ca == 'boulder' }}
         run: test/setup/setup-boulder.sh
